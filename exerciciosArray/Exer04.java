@@ -22,7 +22,7 @@ public class Exer04 {
         vetorA[13] = 2;
         vetorA[14] = 7;
 
-        System.out.println("VetorB = VetorA ao quadrado");
+        System.out.println("VetorB = raiz quadrada VetorA");
         for (int i = 0; i < vetorA.length; i++) {
             vetorB[i] = Math.sqrt(vetorA[i]);
             System.out.printf("VetorA = %d | Vetor B = %.2f\n", vetorA[i], vetorB[i]);
