@@ -5,7 +5,7 @@ public class Exer09 {
 
         int[] vetorA = new int[10];
         int[] vetorB = new int[10];
-        int[] vetorC = new int[10];
+        double[] vetorC = new double[10];
 
         vetorA[0] = 1;
         vetorA[1] = 2;
@@ -31,8 +31,8 @@ public class Exer09 {
 
         System.out.println("VetorC = VetorA / VetorB");
         for (int i = 0; i < vetorA.length; i++) {
-            vetorC[i] = vetorA[i] / vetorB[i];
-            System.out.printf("VetorC = %d | VetorA = %d / Vetor B = %d\n", vetorC[i], vetorA[i], vetorB[i]);
+            vetorC[i] = vetorA[i] / (float)vetorB[i];
+            System.out.printf("VetorC = %.2f | VetorA = %d / Vetor B = %d\n", vetorC[i], vetorA[i], vetorB[i]);
         }
     }
 
