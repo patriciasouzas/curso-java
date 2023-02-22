@@ -1,12 +1,11 @@
 package exerciciosArray;
 
-import java.util.Arrays;
 
 public class Exer01 {
     public static void main(String[] args) {
 
         int[] vetorA = new int[5];
-        int[] vetorB = new int[4];
+        int[] vetorB = new int[5];
 
         vetorA[0] = 6;
         vetorA[1] = 9;
