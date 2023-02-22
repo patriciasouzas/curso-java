@@ -18,8 +18,14 @@ public class Arrays {
 
         System.out.println("O tamanho do array é: " + temperaturas.length);
 
-        for (int i = 0; i<temperaturas.length; i++){
+        // percorre o array com a possibilidade de saber o índice
+        for (int i = 0; i < temperaturas.length; i++) {
             System.out.println("O valor da temperatura do dia " + (i + 1) + " = " + temperaturas[i]);
+        }
+
+        // percorre o array apresentando somente o valor do array
+        for (double temp : temperaturas) {
+            System.out.println(temp);
         }
     }
 }
