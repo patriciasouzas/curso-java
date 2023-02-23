@@ -1,4 +1,4 @@
-package exerciciosArray;
+package aula19.exerciciosArray;
 
 public class Exer03 {
     public static void main(String[] args) {
