@@ -9,10 +9,10 @@ public class Exer02 {
 
         int[][] valores = new int[10][10];
         int maiorL5 = 0;
-        int menorL5 = 51;
+        int menorL5 = Integer.MAX_VALUE;
         int linha5 = 5;
         int maiorC7 = 0;
-        int menorC7 = 51;
+        int menorC7 = Integer.MAX_VALUE;
         int coluna7 = 7;
 
         Random aleatorio = new Random();
