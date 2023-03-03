@@ -7,7 +7,10 @@ public class Exer06 {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+
         char[][] tabuleiro = new char[3][3];
+        System.out.println("Jogador 1 ---- X");
+        System.out.println("Jogador 2 ---- O");
 
         boolean ganhou = false;
         int jogada = 1;
