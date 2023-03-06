@@ -12,5 +12,7 @@ public class TesteCarro {
         van.consumoCombustivel = 0.5;
 
         van.exibirAutonomia();
+
+        System.out.println("A autonomia do carro é: " + van.obterAutonomia() + " Km");
     }
 }
