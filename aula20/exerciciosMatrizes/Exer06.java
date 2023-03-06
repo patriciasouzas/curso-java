@@ -20,10 +20,10 @@ public class Exer06 {
         while (!ganhou) {
 
             if (jogada % 2 == 1) { // jogador 1
-                System.out.println("Vez do jogador 1. Escolha linha e coluna (1 - 3)");
+                System.out.println("Vez do jogador 1. Escolha linha e coluna.");
                 sinal = 'X';
             } else {
-                System.out.println("Vez do jogador 2. Escolha linha e coluna (1 - 3)");
+                System.out.println("Vez do jogador 2. Escolha linha e coluna.");
                 sinal = 'O';
             }
 
@@ -53,6 +53,8 @@ public class Exer06 {
 
             linha--;
             coluna--;
+
+            // verificando posição e adicionando sinal no tabuleiro
             if (tabuleiro[linha][coluna] == 'X' || tabuleiro[linha][coluna] == 'O') {
                 System.out.println("Posição já usada. Escolha outra posição.");
             } else { // jogada válida
@@ -75,7 +77,8 @@ public class Exer06 {
                     (tabuleiro[0][0] == 'X' && tabuleiro[1][0] == 'X' && tabuleiro[2][0] == 'X') || // coluna 1
                     (tabuleiro[0][1] == 'X' && tabuleiro[1][1] == 'X' && tabuleiro[2][1] == 'X') || // coluna 2
                     (tabuleiro[0][2] == 'X' && tabuleiro[1][2] == 'X' && tabuleiro[2][2] == 'X') || // coluna 3
-                    (tabuleiro[0][0] == 'X' && tabuleiro[1][1] == 'X' && tabuleiro[2][2] == 'X')) { // diagonal
+                    (tabuleiro[0][0] == 'X' && tabuleiro[1][1] == 'X' && tabuleiro[2][2] == 'X') || // diagonal e>>d
+                    (tabuleiro[0][2] == 'X' && tabuleiro[1][1] == 'X' && tabuleiro[2][0] == 'X')) { // diagonal d>>e
                 ganhou = true;
                 System.out.println("Parabéns, jogador 1 ganhou!");
             } else if ((tabuleiro[0][0] == 'O' && tabuleiro[0][1] == 'O' && tabuleiro[0][2] == 'O') || // linha 1
@@ -84,7 +87,8 @@ public class Exer06 {
                     (tabuleiro[0][0] == 'O' && tabuleiro[1][0] == 'O' && tabuleiro[2][0] == 'O') || // coluna 1
                     (tabuleiro[0][1] == 'O' && tabuleiro[1][1] == 'O' && tabuleiro[2][1] == 'O') || // coluna 2
                     (tabuleiro[0][2] == 'O' && tabuleiro[1][2] == 'O' && tabuleiro[2][2] == 'O') || // coluna 3
-                    (tabuleiro[0][0] == 'O' && tabuleiro[1][1] == 'O' && tabuleiro[2][2] == 'O')) { // diagonal
+                    (tabuleiro[0][0] == 'O' && tabuleiro[1][1] == 'O' && tabuleiro[2][2] == 'O') || // diagonal e>>d
+                    (tabuleiro[0][2] == 'O' && tabuleiro[1][1] == 'O' && tabuleiro[2][0] == 'O')) { // diagonal d>>e
                 ganhou = true;
                 System.out.println("Parabéns, jogador 2 ganhou!");
             } else if (jogada > 9) {
