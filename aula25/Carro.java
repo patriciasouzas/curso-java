@@ -16,4 +16,10 @@ public class Carro {
         System.out.println("\nMétodo obterAutonomia foi chamado.");
         return capCombustivel * consumoCombustivel;
     }
+
+    double calcularCombustivel(double km) {
+        double qtdCombustivel = km / consumoCombustivel;
+
+        return qtdCombustivel;
+    }
 }

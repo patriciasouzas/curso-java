@@ -14,5 +14,11 @@ public class TesteCarro {
         van.exibirAutonomia();
 
         System.out.println("A autonomia do carro é: " + van.obterAutonomia() + " Km");
+
+        double qtdCombustivel10 = van.calcularCombustivel(10);
+        double qtdCombustivel15 = van.calcularCombustivel(15);
+
+        System.out.println("\nQuantidade de combustível para 10Km: " + qtdCombustivel10);
+        System.out.println("Quantidade de combustível para 15Km: " + qtdCombustivel15);
     }
 }
