@@ -20,5 +20,13 @@ public class Exerc01 {
             lampada.desligarLampada();
             System.out.println("A lâmpada foi desligada.");
         } else System.out.println("Opção desconhecida. Tente novamente.");
+
+        lampada.mostrarEstado();
+        System.out.println();
+
+        System.out.println("----- mudança de estado -----");
+        lampada.mudarEstado();
+        lampada.mostrarEstado();
+
     }
 }
