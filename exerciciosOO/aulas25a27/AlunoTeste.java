@@ -25,7 +25,7 @@ public class AlunoTeste {
             aluno.notas[i] = input.nextDouble();
         }
 
-        aluno.exibirDisciplinasENotas();
+        aluno.exibirInfosAluno();
         aluno.aprovado();
     }
 }

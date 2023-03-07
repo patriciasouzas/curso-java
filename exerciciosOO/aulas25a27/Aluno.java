@@ -11,14 +11,19 @@ public class Aluno {
 
     public void aprovado() {
         for (int i = 0; i < disciplinas.length; i++) {
-            media = media + notas[i];
+            media += notas[i];
         }
         if (media / disciplinas.length >= 7) {
             System.out.println("O aluno está aprovado");
         } else System.out.println("O aluno está reprovado");
     }
 
-    void exibirDisciplinasENotas() {
+    void exibirInfosAluno() {
+        System.out.print("\nNome: " + nome);
+        System.out.print("\nMatrícula: " + matricula);
+        System.out.print("\nCurso: " + curso);
+        System.out.println();
+
         for (int i = 0; i < disciplinas.length; i++) {
             System.out.println(disciplinas[i] + " - " + notas[i]);
         }
